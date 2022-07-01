@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    cursor: pointer;
+}
+.mainNav{
+    display: flex;
+    align-items: center;
+}
+nav{
+    justify-content:space-between;
+    box-shadow: 0 0 10px rgba(0,0, 0, 0.2);
+    padding: 10px 2%;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.rightNav img{
+    width: 25px;
+    margin-right: 25px;
+}
+.rightNav .selfIcon{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.leftNav .menu{
+    width: 25px;
+    margin-right: 20px;
+}
+.leftNav .logo{
+    width: 150px;
+}
+.middleNav .searchBar{
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    margin-right: 15px;
+    border-radius: 50px;
+    
+}
+.middleNav .searchBar input{
+    width: 350px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+.middleNav .searchBar img{
+    width: 15px;
+}
+.middleNav .voiceSearch{
+    width: 20px;
+}
+
+/* SIDEBAR  */
+
+.sideNav{
+    background: #fff;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+    transition: 0.5s ease-in-out;
+}
+
+.sideNav  .upperSideNav img {
+    width: 20px;
+    margin-right: 20px;
+}
+.sideNav  .upperSideNav a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+.sideNav  .upperSideNav a:first-child{
+    color: #ed3833;
+}
+.sideNav  .upperSideNav hr{
+    height: 1px;
+    width: 85%;
+    color: #ccc;
+}
+.sideNav .lowerSideBar h3{
+    margin: 20px 0;
+    font-size: 15px;
+    color: #5a5a5a;
+}
+.sideNav .lowerSideBar img{
+    width: 30px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.sideNav  .lowerSideBar a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+.smallSideNav{
+    width: 5%;
+}
+.smallSideNav a p{
+    display: none;
+}
+.smallSideNav h3{
+    display: none;
+}
+.smallSideNav hr{
+    margin-bottom: 20px;
+    width: 50%;
+}
+.smallSideNav{
+    background-color: rgb(85, 82, 82);  /*rgb(85, 82, 82)*/
+}
+
+/* main */
+.container{
+    padding-left: 17%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #f6f6f6;
+}
+.container .banner{
+    width: 100%;
+    
+}
+.container .banner img{
+    width: 100%;
+    
+}
+.container .listContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+    grid-column-gap: 16px ;
+    grid-row-gap: 30px;
+    padding-top: 15px;
+} 
+.videoList .thumbnail{
+   width: 100%;
+}
+.videoList .mainNav{
+    align-items: flex-start;
+    border-radius: 5px;
+}
+.videoList .mainNav img{
+    width: 35px;
+    border-radius: 50%;
+    margin-top: 7px;
+    margin-right: 15px;
+}
+.videoList .mainNav .content{
+    margin-top: 7px;
+}
+.videoList{
+    color: #5a5a5a;
+    font-size: 14px;
+}
+.videoList .mainNav .content a{
+    color: #000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+.expand{
+    padding-left: 7%;
+}
+
+@media (max-width : 900px){
+    .sideNav{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .rightNav img{
+        display: none;
+    }
+    .rightNav .selfIcon{
+        display: block;
+        width: 35px;
+    }
+    .container , .expand{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .middleNav .voiceSearch{
+        display: none;
+    }
+    .middleNav .searchBar input{
+        width: 100px;
+    }
+    .logo{
+        width: 90px;
+    }
+}
